@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Sérgio e Thatyane</title>
+</head>
+<body>
+    <canvas id="meucanvas"width="800" height="600" style="border:1px solid #000";>Seu navegador não possui suporte.</canvas>
+    <script>
+        var c = document.getElementById("meucanvas");
+        var ctx= c.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.lineWidth = 5;
+        //Base da casa
+        ctx.moveTo(752.5,590);
+        ctx.lineTo(300,590);
+        ctx.lineTo(300,340);
+    
+        //Teto da casa
+        ctx.moveTo(750,340);
+        ctx.lineTo(750,590);
+        ctx.moveTo(526,190);
+        ctx.lineTo(284,350);
+        ctx.lineTo(270,335);
+        ctx.lineTo(525,165);
+        ctx.moveTo(523,190);
+        ctx.lineTo(767,350);
+        ctx.lineTo(780,335);
+        ctx.lineTo(523,165);
+     
+        //Janela centro
+        ctx.moveTo(527,340);
+        ctx.lineTo(525,270);
+        ctx.lineTo(475,270);
+        ctx.lineTo(475,340);
+        ctx.lineTo(575,340);
+        ctx.lineTo(575,270);
+        ctx.lineTo(525,270);
+        ctx.moveTo(575,305);
+        ctx.lineTo(475,305);
+     
+        //Porta
+        ctx.moveTo(575,590);
+        ctx.lineTo(575,415);
+        ctx.lineTo(475,415);
+        ctx.lineTo(475,590);
+      
+        //Janela esquerda
+        ctx.moveTo(437.5,405);
+        ctx.lineTo(335,405);
+        ctx.lineTo(335,475);
+        ctx.lineTo(435,475);
+        ctx.lineTo(435,405);
+        ctx.moveTo(435,440);
+        ctx.lineTo(335,440);
+        ctx.moveTo(385,405);
+        ctx.lineTo(385,475);
+   
+        //Janela direita
+        ctx.moveTo(612.5,405);
+        ctx.lineTo(715,405);
+        ctx.lineTo(715,475);
+        ctx.lineTo(615,475);
+        ctx.lineTo(615,405);
+        ctx.moveTo(615,440);
+        ctx.lineTo(715,440);
+        ctx.moveTo(665,405);
+        ctx.lineTo(665,475);
+    
+        //Chaminé
+        ctx.moveTo(710,288);
+        ctx.lineTo(710,190);
+        ctx.lineTo(635,190);
+        ctx.lineTo(635,238);
+        ctx.moveTo(715.7,185);
+        ctx.lineTo(715.7,175.5);
+        ctx.moveTo(710,170);
+        ctx.lineTo(634,170);
+        ctx.moveTo(628,174.8);
+        ctx.lineTo(628,185.5);
+        ctx.stroke();
+        ctx.closePath();
+       
+        //maçaneta
+        ctx.strokeStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(490, 500, 5, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.closePath();
+      
+        //Chaminé - borda direita inferior
+        ctx.strokeStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(710, 184.5, 6, 0, 0.5 * Math.PI);
+        ctx.stroke();
+        ctx.closePath();
+    
+        //Chaminé - borda direita superior
+        ctx.strokeStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(709.9, 176, 6, 0, 1.5 * Math.PI,true);
+        ctx.stroke();
+        ctx.closePath();
+
+        //Chaminé - borda esquerda inferior
+        ctx.strokeStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(634, 184.5, 6, Math.PI, 0.5 * Math.PI, true);
+        ctx.stroke();
+        ctx.closePath();
+ 
+        //borda esquerda superior
+        ctx.strokeStyle = "#000";
+        ctx.beginPath();
+        ctx.arc(634, 175.8, 6, 1.5 * Math.PI, Math.PI, true); // desenha o quarto de lua virado para a esquerda a partir do topo
+        ctx.stroke();
+        ctx.closePath();
+        //Decorações:
+       
+        //Sol
+        ctx.fillStyle = "#FFD700";
+        ctx.strokeStyle = "#FFD700";
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(50, 50, 80, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(120,120);
+        ctx.lineTo(180,180);
+        ctx.moveTo(50,150);
+        ctx.lineTo(50,230);
+        ctx.moveTo(150,50);
+        ctx.lineTo(230,50);
+        ctx.moveTo(85,140);
+        ctx.lineTo(100,175);
+        ctx.moveTo(140, 90);
+        ctx.lineTo(180,110);
+        ctx.stroke();
+        ctx.closePath();
+
+        //arvore
+        //tronco
+        ctx.beginPath();
+        ctx.strokeStyle="#736154";
+        ctx.fillStyle="#736154";
+        ctx.moveTo(120,590);
+        ctx.lineTo(120,400);
+        ctx.lineTo(120,590);
+        ctx.lineTo(175,590);
+        ctx.lineTo(175,400);
+        ctx.lineTo(120,400);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        //copa
+        ctx.beginPath();
+        ctx.strokeStyle="#069955";
+        ctx.fillStyle="#069955";
+        ctx.arc(150,350,100,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        //maçãs
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(150,300,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+        
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(100,370,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(190,375,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(160,410,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(80,320,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(150,345,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.strokeStyle="#ff2800";
+        ctx.fillStyle="#ff2800";
+        ctx.arc(210,315,10,90,180);
+        ctx.fill();
+        ctx.stroke();
+        ctx.closePath();
+
+        //nomes
+        ctx.fillStyle="#000";
+        ctx.font = "30px serif";
+        //Sérgio da Rocha
+        ctx.fillText("Sérgio da Rocha Alves Júnior",300,50);
+
+        //Thatyane Marques
+        ctx.fillText("Thatyane Carvalho Marques",300,100);
+
+    </script>
+</body>
+</html>
